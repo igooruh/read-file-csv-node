@@ -1,0 +1,13 @@
+{
+  "name": "read-file-csv-node",
+  "version": "1.0.0",
+  "description": "Read File CSV with NodeJS",
+  "main": "no",
+  "repository": "no",
+  "author": "Ígor Pedro Leitão Mascarenhas Martins",
+  "license": "MIT",
+  "private": false,
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
