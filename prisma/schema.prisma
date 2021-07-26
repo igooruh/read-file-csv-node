@@ -9,3 +9,14 @@ datasource db {
 generator client {
   provider = "prisma-client-js"
 }
+
+model Products {
+  id String @id @default(uuid())
+  code_bar String
+  description String
+  price Float
+  quantity Int
+
+// name used in table
+  @@map("products")
+}
