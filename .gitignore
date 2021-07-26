@@ -1,5 +1,7 @@
+# Directory
 node_modules/
 
+# Files
 yarn.lock
-
 .env
+prisma/migrations/migration_lock.toml
