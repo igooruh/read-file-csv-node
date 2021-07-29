@@ -2,19 +2,14 @@ import { Request, Response, Router } from 'express';
 import multer from 'multer';
 import { Readable } from 'stream';
 import readLine from 'readline';
+
 import { client } from './database/client';
+import { Product } from '../src/interfaces/products';
 
 // Multer can sometimes options
 const multerConfig = multer();
 
 const router = Router();
-
-interface Product {
-    code_bar: string;
-    description: string;
-    price: number;
-    quantity: number;
-}
 
 router.post('/products', multerConfig.single('file'),
     async (request: Request, response: Response) => {
