@@ -6,7 +6,7 @@ import readLine from 'readline';
 import { client } from './database/client';
 import { Product } from '../src/interfaces/products';
 
-// Multer can sometimes options
+// Multer could sometimes options
 const multerConfig = multer();
 
 const router = Router();
